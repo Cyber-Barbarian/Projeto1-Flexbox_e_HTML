@@ -8,3 +8,12 @@ Em um primeiro momento, estamos preocupados somente com layout.
 --------------------------------------
 ####Estrutura de pastas do projeto
 css, javascript e imagens estão guardados na pasta assets
+
+--------------------------------------
+####Design
+Para a construção do design responsivo optou-se por utilizar flexbox. 
+O logo foi criado por mim mesmo 
+
+--------------------------------------
+####O site não é ainda responsivo. 
+O intuto desta primeira parte é o treino de flexbox. Questões relativas à responsividade serão vistas posteriormente.

@@ -1,6 +1,7 @@
 body{
     margin:0;
     padding:0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 *{
@@ -10,19 +11,19 @@ body{
 header{
     display: flex;
     justify-content: center;
+    height: 100px;
 }
 
 .container{
     display: flex;
     width: 990px;
-    height: 100px;
-    justify-content: space-around;
-    flex-flow: row, wrap;
+    justify-content: space-between;
+
 }
 .logo{
     display: flex;
     align-self:center;
-    flex:1;
+    /* flex:1; */
 }
 
 
@@ -60,4 +61,201 @@ nav .active a,
 nav a:hover{
     background-color: #39aae1;
     color: #FFFFFF;
+}
+
+#banner{
+    display: flex;
+    justify-content: center;
+    align-self:center;
+    background-image: url("../images/health2.jpg")  ;
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+    
+}
+.column{
+    flex-direction: column;
+    
+}
+
+
+.banner-headline{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.banner-headline h1{
+    color: white;
+    font-size: 50px;
+    text-shadow: 0px 1px 0px #555555;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+}
+.banner-headline h2{
+    color: white;
+    font-size: 19px;
+    text-shadow: 0px 1px 0px #555555;
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    margin-top: 30px;
+}
+
+
+.banner_options{
+    display: flex;
+    height: 210px;
+}
+
+.banner1, .banner2, .banner3{
+    flex:1;
+    color:#FFFFFF;
+	padding:20px;
+}
+.banner1{
+    background-color: #39aae1;
+}
+.banner2{
+    background-color: #0079c7;
+}
+.banner3{
+    background-color: #2b4c95;
+}
+
+.banner_title{
+    font-size: 21px;
+}
+
+.banner_desc{
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner_options a{
+    border: 1px solid white;
+    padding: 5px;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.banner_list{
+    display:flex;
+    justify-content:space-between;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #555555;
+}
+
+
+#geral{
+    display: flex;
+    justify-content: center;
+    height: 600px;
+}
+
+#geral section{
+    flex:2;
+}
+
+#geral aside{
+    flex: 1;
+}
+
+.widget_title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.widget_title_text{
+    color:black;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.widget_title_bar{
+    width:50px;
+    height:2px;
+    background-color:#36a9e1;
+    margin-top:20px;
+    
+}
+.square {
+    display: flex;   
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.square div{
+    margin-top: 20px;
+    height: 140px;
+    width: 140px;
+    background-color: #0079c7;
+}
+
+.widget .banner_list a{
+    text-decoration: none;
+    color: #0079c7;
+    font-size: 17px;
+}
+
+.news_data
+{
+    display: flex;
+    
+}
+article .news_posted_at{
+    color:white;
+    font-size: 12px;
+    background-color: #2b4c99;
+    padding: 10px;
+    margin-right: 3px;
+}
+article .news_comments{
+    color:white;
+    font-size: 12px;
+    background-color: #39aae1;
+    padding: 10px;
+}
+
+.news_tumb figure img{
+    width:100%;
+    height: auto;
+}
+article .news_tumb{
+    margin-top: 30px;
+}
+
+article .news_title{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 23px;
+    color: #000000;
+}
+
+article .news_resume{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #5c5c5c;
+}
+article a {
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+    justify-content: space-around;
 }
